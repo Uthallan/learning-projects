@@ -26,8 +26,3 @@ def run_game():
         pygame.display.flip()
 
 run_game()
-
-
-#goddamnit github
-#is this in the stage?
-#alright, this just might work
