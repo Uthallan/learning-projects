@@ -1,0 +1,39 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Coloring {
+
+	public static void main(String[] args) {
+
+
+        DrawingPanel panel = new DrawingPanel(800, 800);
+        panel.setBackground(Color.WHITE);
+        Graphics g = panel.getGraphics();
+
+        
+        for (int x = 0; x <= 100; x++) {
+        	for (int y = 0; y <= 1; y++) {
+        		if ((y % 2) != 0) {
+            int cornerX = x*20;  // calculate upper left corner
+            int cornerY = y*100;
+            g.setColor(Color.BLACK);
+            g.drawOval(cornerX-100, cornerY, 100, 100);
+            g.setColor(Color.WHITE);
+            g.fillOval(cornerX-100, cornerY, 100, 100);
+        		}
+        		
+        		else {
+   /*         
+            int cornerX = x*20;  // calculate upper left corner
+            int cornerY = y*50;
+            g.setColor(Color.BLACK);
+            g.drawOval(cornerX-100, cornerY, 100, 100);
+            g.setColor(Color.WHITE);
+            g.fillOval(cornerX-100, cornerY, 100, 100);
+    */        }
+        	}
+                     }
+    
+	}
+
+}

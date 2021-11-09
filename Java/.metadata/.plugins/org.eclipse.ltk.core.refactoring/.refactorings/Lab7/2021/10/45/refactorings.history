@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Program6&apos;&#x0D;&#x0A;- Original project: &apos;Lab7&apos;&#x0D;&#x0A;- Destination element: &apos;Program6&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     DrawLoop.java&#x0D;&#x0A;     DrawingPanel.java" description="Copy compilation units" element1="/&lt;{DrawLoop.java" element2="/&lt;{DrawingPanel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1635707476938" target="/Program6" units="2" version="1.0"/>
+</session>

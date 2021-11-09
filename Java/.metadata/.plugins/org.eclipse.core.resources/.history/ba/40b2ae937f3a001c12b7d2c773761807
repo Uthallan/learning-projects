@@ -1,0 +1,25 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Coloring {
+
+	public static void main(String[] args) {
+
+
+        DrawingPanel panel = new DrawingPanel(400, 400);
+        panel.setBackground(Color.WHITE);
+        Graphics g = panel.getGraphics();
+
+        int sizeX = 50;  // size of circles
+        int sizeY = 25;
+              for (int i = 0; i <= 10; i++) {    // repeat for i = 0,1,2...7
+            int cornerX = i*50;  // calculate upper left corner
+            int cornerY = i*25;
+            g.setColor(Color.BLACK);
+            g.fillOval(cornerX + 5, cornerY + 5, sizeX, sizeY);
+                                //  i++; // increment i for next iteration
+        }
+    
+	}
+
+}
