@@ -62,7 +62,7 @@ public class WordMorph2 {
                 "zap","zig","zip","zoo"};
 
         // get the starting word
-		//Scanner scnr = new Scanner(System.in);
+		Scanner scnr = new Scanner(System.in);
         System.out.println("Word morph challenge.");
         System.out.println("Can you gradually change a word "+
                            "one letter at a time into 10 new words?");
@@ -90,6 +90,7 @@ public class WordMorph2 {
             char newChar = change.charAt(1);
             // replace the character in the word
             word = word.replace(oldChar, newChar);
+            scnr.close();
 
             // Exercise 4: check if word is in the dictionary
             boolean foundIt = false;

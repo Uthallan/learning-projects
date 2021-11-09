@@ -198,9 +198,9 @@ public class DrawingPanel implements ComponentListener {
     private class ImagePanel extends JPanel {
         public void paint(Graphics g) {
             super.paint(g);
-            Graphics2D g2 = (Graphics2D)g;
+            Graphics2D g2 = (Graphics2D) g;
             AffineTransform t = g2.getTransform();
-            t.scale(1.0/xScale, 1.0/yScale);
+            t.scale(1.0 / xScale, 1.0 / yScale);
             g2.setTransform(t);
             g2.drawImage(image, 0, 0, this);
         }
