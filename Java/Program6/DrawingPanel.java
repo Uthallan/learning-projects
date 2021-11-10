@@ -194,7 +194,11 @@ public class DrawingPanel implements ComponentListener {
     // (This is a nested class so it can access DrawingPanel fields)
     // overrides paint() no double buffering
     // rather than paintComponent() that does double buffering
-    @SuppressWarnings("serial")
+
+    // I commented out """ @SuppressWarnings("serial") "" below because it gave error in VS Code that was annoying:
+    // "At least one of the problems in category 'serial' is not analysed due to a compiler option being ignored"
+
+    //@SuppressWarnings("serial")
     private class ImagePanel extends JPanel {
         public void paint(Graphics g) {
             super.paint(g);
