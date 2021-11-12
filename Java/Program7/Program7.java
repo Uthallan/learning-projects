@@ -1,5 +1,5 @@
 import java.util.Random;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Program7 {
 
@@ -14,10 +14,10 @@ public class Program7 {
 		System.out.println("Welcome to the coin flip analyzer.");
 		System.out.println("How many flips? ");
 		
-		Scanner scnr = new Scanner(System.in);
+		//Scanner scnr = new Scanner(System.in);
 		
-		numFlips = scnr.nextInt();
-		scnr.close();
+		//numFlips = scnr.nextInt();
+		//scnr.close();
 			
 		// Flip Coin
 		int lastFlip = 0;

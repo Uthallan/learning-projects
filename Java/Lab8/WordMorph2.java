@@ -90,7 +90,7 @@ public class WordMorph2 {
             char newChar = change.charAt(1);
             // replace the character in the word
             word = word.replace(oldChar, newChar);
-            scnr.close();
+            
 
             // Exercise 4: check if word is in the dictionary
             boolean foundIt = false;
@@ -119,7 +119,7 @@ public class WordMorph2 {
             // print the new word
             System.out.print(i + "\t" + word + "  : ");
         }
-
+        scnr.close();
         System.out.println("YOU DID IT!");
     }
 }
