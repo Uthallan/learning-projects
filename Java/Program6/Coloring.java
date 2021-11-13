@@ -16,20 +16,20 @@ public class Coloring {
         		if ((y % 2) == 0) {
             int cornerX = x*20;  // calculate upper left corner
             int cornerY = y*100;
-            g.setColor(Color.BLACK);
-            g.drawOval(cornerX-100, cornerY, 100, 100);
             g.setColor(Color.WHITE);
             g.fillOval(cornerX-100, cornerY, 100, 100);
+            g.setColor(Color.BLACK);
+            g.drawOval(cornerX-100, cornerY, 100, 100);
         		}
         		
         		else {
             
             int cornerX = 1000-(x*20);  // calculate upper left corner
             int cornerY = y*100;
-            g.setColor(Color.BLACK);
-            g.drawOval(cornerX-100, cornerY, 100, 100);
             g.setColor(Color.WHITE);
             g.fillOval(cornerX-100, cornerY, 100, 100);
+            g.setColor(Color.BLACK);
+            g.drawOval(cornerX-100, cornerY, 100, 100);
             }
         	}
                      }

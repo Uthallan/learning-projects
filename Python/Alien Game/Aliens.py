@@ -8,7 +8,7 @@ RESOLUTION = [WIDTH:=800, HEIGHT:=600]
 bg_color = (WHITE:=(255, 255, 255))
 
 # ASSETS
-SPACESHIP_IMAGE = pygame.image.load(os.path.join('Alien Game', 'Assets', 'SHIP.png'))
+SPACESHIP_IMAGE = pygame.image.load(os.path.join('resources', 'Assets', 'SHIP.png'))
 SPACESHIP = pygame.transform.rotate(pygame.transform.scale(SPACESHIP_IMAGE, (55,40)), -90)
 
 def draw_screen():
