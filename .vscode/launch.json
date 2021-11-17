@@ -4,7 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch TileStart",
+            "request": "launch",
+            "mainClass": "TileStart",
+            "projectName": "learning-projects_cdfee3ac"
+        },
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
@@ -25,22 +31,6 @@
                 }
             ]
         },
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
@@ -53,8 +43,6 @@
             "request": "launch",
             "type": "pwa-extensionHost"
         },
-
-
         {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
