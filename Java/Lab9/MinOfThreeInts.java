@@ -20,25 +20,30 @@ public class MinOfThreeInts
         System.out.print("Please enter an integer value ");
         String input = scnr.nextLine();
         goodInt = false;
+        int parsedValue1 = parsedValue;
         while (!goodInt)
         {
             try
             {
-                parsedValue = Integer.parseInt(input);
+                parsedValue1 = Integer.parseInt(input);
                 goodInt = true;
             }
-            catch(NumberFormatException ex)
+            catch(NumberFormatException ex1)
             {
                 System.out.print("    Invalid input, please enter an integer ");
                 input = scnr.nextLine();
             }
         }
+
+        parsedValue = parsedValue1;
+
         value1 = parsedValue;
 
         // Get the second integer
         System.out.print("Please enter an integer value ");
         input = scnr.nextLine();
         goodInt = false;
+
         while (!goodInt)
         {
             try
@@ -52,6 +57,7 @@ public class MinOfThreeInts
                 input = scnr.nextLine();
             }
         }
+      
         value2 = parsedValue;
 
         // Get the third integer
@@ -87,6 +93,23 @@ public class MinOfThreeInts
         // Now report the results
         System.out.println("The minimum value of the three integers is " + min);
         scnr.close();
+    }
+
+    private static int firstInt(Boolean goodInt, int parsedValue, Scanner scnr, String input) {
+        while (!goodInt)
+        {
+            try
+            {
+                parsedValue = Integer.parseInt(input);
+                goodInt = true;
+            }
+            catch(NumberFormatException ex)
+            {
+                System.out.print("    Invalid input, please enter an integer ");
+                input = scnr.nextLine();
+            }
+        }
+        return parsedValue;
     }
     
 }
