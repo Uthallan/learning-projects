@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "Java/Program8"
+        "Java/Program8",
+        "Java/Lab10"
     ]
 }

@@ -1,3 +1,5 @@
+package graphing;
+
 import java.awt.*;
 
 public class TileStart {
