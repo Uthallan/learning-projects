@@ -1,3 +1,3 @@
-import os
-
-echo execShellCmd("ipconfig")
+import std/random
+randomize()
+echo rand(100)
