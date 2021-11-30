@@ -1,3 +1,3 @@
-import std/random
-randomize()
-echo rand(100)
+var line: string = "################################################################"
+line[5..40] = "crab"
+echo line

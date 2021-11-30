@@ -12,8 +12,9 @@ randomize()
 ######################################################
 #                 Global Variables                   #
 ######################################################
-var dictionary: seq[string] = @[]
-
+var 
+    dictionary = newSeq[string]()
+    hiddenWord: string
 ######################################################
 #                   PROCEDURES                       #
 ######################################################
@@ -27,11 +28,39 @@ proc createDictionary(filePath: string): seq[string] =
         if wordList[i] != "":
             dictionary.add(wordList[i])
     return dictionary
+proc chooseHiddenWord(): string =
+    hiddenWord = dictionary[rand(dictionary.len-1)]
+    return hiddenWord
 
 
+proc drawHangedMan(guessesLeft: int): string =
+    var 
+        # 64 character long background pixel thingy
+        canvasLine: string = "################################################################"
+    proc createBlankCanvas(): 
+    echo "                                              ############      "
+    echo "                                                |       ##      "
+    echo "                                                |       ##      "
+    echo "                                               (_)      ##      "
+    echo "                                                        ##      "
+    echo "                                                        ##      "
+    echo "                                                        ##      "
+    echo "                                                        ##      "
+    echo "                                            ################    "
+    echo "                                            ##            ##    "
+    echo "                                            ##            ##    "
+    echo "################################################################"
 
 ######################################################
 #                     MAIN                           #
 ######################################################
-dictionary = createDictionary("wordListSmall.txt")
-echo dictionary[rand(dictionary.len-1)]
+
+# Create Dictionary (no idea if this is memory efficient)
+dictionary = createDictionary("D:\\BulkData\\wordList.txt")
+
+
+
+hiddenWord = chooseHiddenWord()
+echo hiddenWord
+
+#echo drawHangedMan()
