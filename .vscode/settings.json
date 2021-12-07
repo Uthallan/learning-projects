@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "Java/Program9",
         "Java/Program8",
+        "Java/Lab11",
         "Java/Lab10",
-        "Java/Lab11"
+        "Java/Program10"
     ]
 }
