@@ -1,0 +1,1 @@
+monthSum/10

@@ -114,6 +114,7 @@ public class Prog9ArrayMethods {
         for (int i = 0; i<array.length;i++) {
                 if (value == array[i]) {
                     instance = i;
+                    break;
                 }
         }
         return instance;
