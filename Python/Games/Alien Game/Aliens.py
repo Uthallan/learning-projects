@@ -2,6 +2,7 @@ import sys
 import pygame
 import os
 
+# print(os.getcwd())
 
 # SETTINGS
 RESOLUTION = [WIDTH:=800, HEIGHT:=600]
